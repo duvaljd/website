@@ -4,33 +4,42 @@
 		<title></title>
 		<meta charset = "UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="styleshhet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<header class="homeheader">
-			<div class="homeheader">
+	<div class="container-fluid">		
+		<header>
+		<div class="row main">
+			<div class="col-xs-12">
 				<h1>JD</h1>
-				<nav class="homenav">
-					<a class="homenavlink" href="index.html">home</a>
-					<a class="homenavlink" href="poems.html">poems</a>
-					<a class="homenavlink" href="stories.html">stories</a>
-					<a class="homenavlink" href="about.html">about</a>
-					<a class="homenavlink" href="resume.html">resume</a>
-				</nav>
 			</div>
+			<nav>
+			<div class="col-xs-12 nav">
+				<a href="home.html">Home</a>
+				<a href="poems.html">Poems</a>
+				<a href="resume.html">Resume</a>
+				<a href="about.html">About</a>
+			</div>
+			</nav>
+		</div>
 		</header>
 		<footer>
-			<div>
+		<div class="row footer">
+			<div class="col-xs-6">
 				<a href=""><img src="images/fb.png"></img></a>
 				<a href=""><img src="images/linked.png"></img></a>
 				<a href=""><img src="images/twit.png"></img></a>
 				<a href=""><img src="images/insta.png"></img></a>
-				<br>
-				<p>JD Duval</p>
-				<p>Detroit, MI 48216</p>
-				<a href="mailto:duvaljd@umich.edu">duvaljd@umich.edu</a>
 			</div>
+			<div class="col-xs-6">
+				<p>jd duval / Detroit, MI 48216 / <a href="mailto:duvaljd@umich.edu">duvaljd@umich.edu</a></p>
+			</div>
+		</div>
 		</footer>
+	</div>
 	</body>
 </html>
