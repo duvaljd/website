@@ -1,50 +1,226 @@
-@font-face {
-	font-family: latoBold;
-	src: url('../fonts/latobold.ttf');
-	src: url('../fonts/latoBold.ttf?#iefix') format('truetype'), /* IE6-IE8 */
-		 url('../fonts/latobold.ttf') format('ttf'), /* Super Modern Browsers */
-         url('../fonts/latobold.ttf') format('ttf'), /* Pretty Modern Browsers */
-         url('../fonts/latobold.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/latobold.ttf#svgFontName') format('truetype'); /* Legacy iOS */
-}
+/* fonts */
+		@font-face {
+			font-family: latoBold;
+			src: url('../fonts/latobold.ttf');
+			src: url('../fonts/latoBold.ttf?#iefix') format('truetype'), /* IE6-IE8 */
+				 url('../fonts/latobold.ttf') format('ttf'), /* Super Modern Browsers */
+				 url('../fonts/latobold.ttf') format('ttf'), /* Pretty Modern Browsers */
+				 url('../fonts/latobold.ttf')  format('truetype'), /* Safari, Android, iOS */
+				 url('../fonts/latobold.ttf#svgFontName') format('truetype'); /* Legacy iOS */
+		}
 
-@font-face {
-	font-family: latoLight;
-	src: url('../fonts/latolight.ttf');
-}
+		@font-face {
+			font-family: latoLight;
+			src: url('../fonts/latolight.ttf');
+		}
 
-@font-face {
-	font-family: latoRegular;
-	src: url('../fonts/latoregular.ttf');
-}
+		@font-face {
+			font-family: latoRegular;
+			src: url('../fonts/latoregular.ttf');
+		}
+/* end fonts */
 
-html {
-	min-height: 100%;
-}
+/* global styles */
+		html {
+			min-height: 100%;
+		}
 
-body {
-	height: 100%;
-	margin-bottom: 60px;
-	background: url(../images/bg.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+		body {
+			height: 100%;
+			margin-bottom: 60px;
+			background: url(../images/bg.jpg);
+			background-repeat: no-repeat;
+			background-size: auto;
+			background-position: left bottom;
+			background-attachment: fixed;
+		}
 
-h1 {
-	font-family: latoBold;
-	font-size: 70px;
-	text-align: center;
-	margin-top: 35vh;
-}
+		.main {
+			margin-top: 150px !important;
+		}
 
-h1:after {
-	content: "DUVAL";
-	font-family: latoLight;
-}
+		header {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			color: #000;
+			height: 149px;
+			clear: both;
+			z-index: 99;
+			background: rgba(255, 255, 255, 1);
+			background: url(../images/darkbg.png);
+			background-repeat: repeat;
+		}
+
+		h1 {
+			font-family: latoBold;
+			text-align: center;
+			font-size: 70px;
+			color: #000;
+		}
+
+		h1:after {
+			content: "DUVAL";
+			font-family: latoLight;
+		}
+		
+		.home {
+			background: url(../images/bgfull.jpg);
+			background-repeat: no-repeat;
+			background-size: auto;
+			background-position: left bottom;
+			background-attachment: fixed;
+		}
+/* end global styles */
+
+/* main content on subpages */
+		.content {
+			width: 100%;
+			text-align: center;
+		}
+
+		.content ul {
+			list-style-type: none;
+			margin: 0 !important;
+			padding: 0 !important;
+			width: 100%;
+		}
+
+		.content li {
+			display: inline-block;
+			width: 80%;
+			color: #000;
+			margin: 10px;
+			border: 1px solid black;
+			padding: 5%;
+			font-family: latoLight;
+			font-size: 20px;
+			background: rgba(255, 255, 255, .9)
+		}
+
+		.content h2 {
+			font-family: latoRegular;
+			font-size: 25px;
+			color: #000;
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+		
+		.content p {
+			text-align: justify;
+		}
+		
+		.content h3 {
+			font-variant: small-caps;
+			font-family: latoBold;
+			text-align: justify;
+			font-size: 18px;
+		}
+		
+		.content h4 {
+			text-align: justify;
+			font-weight: bold;
+			font-size: 16px;
+		}
+/* end main content on subpages */
+
+/* about.html*/
+		#about #welcome {
+		}
+
+		#about #welcome img {
+			width: 50%;
+			max-width: 250px;
+			height: 50%;
+			max-height: 250px;
+			border: 3px solid #000;
+			margin: 10px 0 10px 0;
+		}
+
+		#about #raised img {
+			width: 50%;
+			max-width: 300px;
+		}
+
+		#about #gamer img {
+			width: 50%;
+			max-width: 200px;
+			border: 3px solid black;
+			margin: 10px;
+		}
+
+		#about #apollo img {
+			width: 30%;
+			max-width: 200px;
+			border: 3px solid black;
+			margin: 10px;
+		}
+		
+		.subnav {
+			width: 100%;
+			text-align: center;
+		}
+
+		.subnav a {
+			font-family: latoBold;
+			text-transform: lowercase;
+			display: inline-block;
+			color: black;
+			margin-right: 10px;
+			font-size: 15px;
+		}
+		
+		.subnav a:hover {
+			color: #2cb5e8;
+		}
+/* end about.html */
+
+/* poem.html */
+		#poems li {
+			font-family: latoLight;
+			text-align: left;
+			border: 1px solid black;
+		}
+		
+		#poems p {
+			margin-bottom: 20px;			
+		}
+		
+		#poems h2 {
+			margin-bottom: 50px !important;
+		}	
+/* end poem.html */
+
+
+/*resume.html */
+		#resume p {
+			margin-bottom: 0px !important;
+			font-size: 18px;
+		}
+		
+		#resume ul li ul li {
+			list-style-type: square;
+			margin: 0 !important;
+			padding: 0 !important;
+			width: 100%;
+		}
+
+		#resume li ul li {
+			display: block;
+			list-style-type: square;
+			margin: 0 !important;
+			border: none;
+			padding: 0 !important;
+			font-family: latoRegular;
+			font-size: 18px;
+			background: none;
+			text-align: left;
+		}
+/* end resume.html */
 
 .nav {
 	text-align: center;
-	background-color: #000;
+	background: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -58,7 +234,7 @@ footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	background-color: #000;
+	background: rgba(0, 0, 0, 0.7);
 	color: #fff;
 	height: 60px;
 }
@@ -95,17 +271,22 @@ footer img {
 }
 
 .nav a {
-	font-family: latoRegular;
+	font-family: latoBold;
 	text-transform: uppercase;
 	display: inline-block;
-	background-color: #000;
 	color: #fff;
 	width: 10%;
 	line-height: 300%;
 }
 
-.nav a:hover {
-	text-decoration: none;
+.here {
 	background-color: #fff;
-	color: orange;
+	color: #000 !important;
+}
+
+.nav a:hover {
+	font-family: latoBold;
+	text-decoration: none;
+	background: rgba(255, 255, 255, 1);
+	color: #2cb5e8 !important;
 }

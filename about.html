@@ -1,60 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>About JD</title>
+		<title></title>
 		<meta charset = "UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="styleshhet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<header class="subheader">
-				<nav class="subnav">
-					<ul>
-						<li><h1>JD</h1></li>
-						<li><a class="subnavlink" href="index.html">home</a></li>
-						<li><a class="subnavlink" href="poems.html">poems</a></li>
-						<li><a class="subnavlink" href="stories.html">stories</a></li>
-						<li><a class="subnavlink" href="about.html">about</a></li>
-						<li><a class="subnavlink" href="resume.html">resume</a></li>
-					</ul>
-				</nav>
+	<div class="container-fluid">		
+		<header>
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>JD</h1>
+			</div>
+			<nav>
+			<div class="col-xs-12 nav">
+				<a href="index.html">Home</a>
+				<a href="poems.html">Poems</a>
+				<a href="resume.html">Resume</a>
+				<a href="about.html" class="here">About</a>
+			</div>
+			</nav>
+		</div>
 		</header>
-		<div class="maincontent">
-			<div class="container">
-				<div id="about">
-					<h2>Hi. Thanks for visiting.</h2>
-					<p><a href="images/jd.jpg" target="_blank"><img src="images/jd.jpg"></img></a>
-					I prefer to let the work and pictures tell you what you need to know, but here are a few facts about me that might interest you:
-					</p>
-					<ul>
-						<li>I was born in Toledo, OH, and raised in rural southeast Michigan</li>
-						<li>My middle name does, in fact, begin with a D, so we don't have an ATM Machine-type acronym situation here</li>
-						<li>I'm an avid gamer -- Now Playing: Dark Souls III: Ashes of Ariandel; Civilization VI; soon-to-be lost in Final Fantasy XV</li>
-						<li>Proud doggy daddy -- Apollo is my 13-month old German Shepherd, see pics below
-						<li>In another life, I might've been a chef (of dubious talent, probably)
-				</div>
-				<div>
-					<img src=""></img>
-					<img src=""></img>
-					<img src=""></img>
-					<img src=""></img>
-					<img src=""></img>
-					<img src=""></img>
-				</div>
+		
+		<div class="row content main" id="about">
+			<div class="col-xs-12">
+				<ul>
+					<li id="welcome">
+						<h2>Hi. Thanks for stopping by.</h2>
+						<a href="images/jd.jpg" target="_blank"><img src="images/jd.jpg"></img></a>
+						<p>
+							<br>
+							I like to let the work speak for itself, but there might be some
+							things you want to know about me. Here are a few things you may
+							(or may not) find interesting.</p>
+					</li>
+					<li id="raised">
+						<h2>I was born in Toledo, OH and raised in southeast Michigan</h2>
+						<a href="images/ohio.png" target="_blank"><img src="images/ohio.png"></img></a>
+						<a href="images/michigan.png" target="_blank"><img src="images/michigan.png"></img></a>
+					</li>
+					<li id="gamer">
+						<h2>I'm an avid gamer.</h2>
+						<p>Now Playing: Dark Souls III: Ashes
+						of Ariandel; Civilization VI; and soon to be lost in Final
+						Fantasy XV.</p>
+						<a href="images/ds3.jpg" target="_blank"><img src="images/ds3.jpg"></img></a>
+						<a href="images/civvi.jpg" target="_blank"><img src="images/civvi.jpg"></img></a>
+						<a href="images/ffxv.jpg" target="_blank"><img src="images/ffxv.jpg"></img></a>
+					</li>
+					<li id="name">
+						<h2>The 'D' in JD does stand for something other than Duval</h2>
+						<p>No ATM machine situation around here.</p>
+					</li>
+					<li id="apollo">
+						<h2>I'm a proud dog dad</h2>
+						<p>Apollo, my German Shepherd was born
+						September 22, 2015.</p>
+						<a href="images/apollo1.jpg" target="_blank"><img src="images/apollo1.jpg"></img></a>
+						<a href="images/apollo2.jpg" target="_blank"><img src="images/apollo2.jpg"></img></a>
+						<a href="images/apollo3.jpg" target="_blank"><img src="images/apollo3.jpg"></img></a>
+						<a href="images/apollo4.jpg" target="_blank"><img src="images/apollo4.jpg"></img></a>
+						<a href="images/apollo5.jpg" target="_blank"><img src="images/apollo5.jpg"></img></a>
+						<a href="images/apollo6.jpg" target="_blank"><img src="images/apollo6.jpg"></img></a>
+						<a href="images/apollo7.jpg" target="_blank"><img src="images/apollo7.jpg"></img></a>
+						<a href="images/apollo8.jpg" target="_blank"><img src="images/apollo8.jpg"></img></a>
+						<a href="images/apollo9.jpg" target="_blank"><img src="images/apollo9.jpg"></img></a>
+					</li>
+					<li id="food">
+						<h2>In another life, I may have been a (probably talentless)
+						chef</h2>
+						<p>Mostly I just think this because I love food, so I have to cook
+							all the time.</p>
+					</li>
+				</ul>
 			</div>
 		</div>
+			
 		<footer>
-			<div>
-				<a href=""><img src="images/fb.png"></img></a>
-				<a href=""><img src="images/linked.png"></img></a>
-				<a href=""><img src="images/twit.png"></img></a>
-				<a href=""><img src="images/insta.png"></img></a>
-				<br>
-				<p>JD Duval</p>
-				<p>Detroit, MI 48216</p>
-				<a href="mailto:duvaljd@umich.edu">duvaljd@umich.edu</a>
+		<div class="row footer">
+			<div class="col-xs-6">
+				<a href="https://www.facebook.com/jd.duval.86"><img src="images/fb.png"></img></a>
+				<a href="https://www.linkedin.com/in/joshua-duval-a69803126"><img src="images/linked.png"></img></a>
+				<a href="https://twitter.com/jdeviant_"><img src="images/twit.png"></img></a>
+				<a href="https://www.instagram.com/_hdjd_/"><img src="images/insta.png"></img></a>
 			</div>
+			<div class="col-xs-6">
+				<p>jd duval / Detroit, MI 48216 / <a href="mailto:duvaljd@umich.edu">duvaljd@umich.edu</a></p>
+			</div>
+		</div>
 		</footer>
+	</div>
 	</body>
 </html>
